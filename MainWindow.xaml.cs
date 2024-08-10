@@ -27,43 +27,49 @@ namespace WpfApp1
             }
             else
             {
-                float result = 0;
-                if (mul_rb_pressed == true)
+                
+                bool available_data_first_number = true;
+                bool available_data_second_number = true;
+                
+                available_data_first_number = float.TryParse(firstNumberBox.Text, out float first_number);
+                available_data_second_number = float.TryParse(secondNumberBox.Text, out float second_number);
+
+                if (available_data_first_number == false || available_data_second_number == false)
                 {
-                    result = float.Parse(firstNumberBox.Text) * float.Parse(secondNumberBox.Text);
-                    string result_str = result.ToString();
-                    resultText.Text = result_str;
-                }
-                else if (div_rb_pressed == true)
-                {
-                    if (float.Parse(firstNumberBox.Text) == 0)
-                    {
-                        resultText.Text = "Error";
-                    }
-                    else
-                    {
-                        result = float.Parse(firstNumberBox.Text) / float.Parse(secondNumberBox.Text);
-                        string result_str = result.ToString();
-                        resultText.Text = result_str;
-                    }
-                }
-                else if (add_rb_pressed == true)
-                {
-                    result = float.Parse(firstNumberBox.Text) + float.Parse(secondNumberBox.Text);
-                    string result_str = result.ToString();
-                    resultText.Text = result_str;
-                }
-                else if (sub_rb_pressed == true)
-                {
-                    result = float.Parse(firstNumberBox.Text) - float.Parse(secondNumberBox.Text);
-                    string result_str = result.ToString();
-                    resultText.Text = result_str;
+                    resultText.Text = "Not Valid";
                 }
                 else
                 {
-                    resultText.Text = "Enter Opeartion";
+                    float result = 0;
+                    if (mul_rb_pressed == true)
+                    {
+                        result = first_number * second_number;
+                        string result_str = result.ToString();
+                        resultText.Text = result_str;
+                    }
+                    else if (div_rb_pressed == true)
+                    {
+                        result = first_number / second_number;
+                        string result_str = result.ToString();
+                        resultText.Text = result_str;
+                    }
+                    else if (add_rb_pressed == true)
+                    {
+                        result = first_number + second_number;
+                        string result_str = result.ToString();
+                        resultText.Text = result_str;
+                    }
+                    else if (sub_rb_pressed == true)
+                    {
+                        result = first_number - second_number;
+                        string result_str = result.ToString();
+                        resultText.Text = result_str;
+                    }
+                    else
+                    {
+                        resultText.Text = "Enter Opeartion";
+                    }
                 }
-
             }
 
         }
