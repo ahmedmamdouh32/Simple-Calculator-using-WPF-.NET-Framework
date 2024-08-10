@@ -14,18 +14,9 @@ namespace WpfApp1
         {
             
             InitializeComponent();
-            resultText.Text = "0000";
 
 
         }
-
-       
-
-        private void TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-           
-        }
-
 
 
         private void calculateButtonClicked(object sender, RoutedEventArgs e)
@@ -77,12 +68,12 @@ namespace WpfApp1
 
         }
 
-        private void multiplyRadioButtonClicked(object sender, RoutedEventArgs e)
+        private void addRadioButtonClicked(object sender, RoutedEventArgs e)
         {
-            mul_rb_pressed = true;
+            mul_rb_pressed = false;
             div_rb_pressed = false;
-            add_rb_pressed = false;
-            sub_rb_pressed = false;    
+            add_rb_pressed = true;
+            sub_rb_pressed = false;
         }
 
         private void substractRadioButtonClicked(object sender, RoutedEventArgs e)
@@ -93,14 +84,14 @@ namespace WpfApp1
             sub_rb_pressed = true;
         }
 
-        private void addRadioButtonClicked(object sender, RoutedEventArgs e)
+        private void multiplyRadioButtonClicked(object sender, RoutedEventArgs e)
         {
-            mul_rb_pressed = false;
+            mul_rb_pressed = true;
             div_rb_pressed = false;
-            add_rb_pressed = true;
+            add_rb_pressed = false;
             sub_rb_pressed = false;
         }
-
+      
         private void divideRadioButtonClicked(object sender, RoutedEventArgs e)
         {
             mul_rb_pressed  = false;

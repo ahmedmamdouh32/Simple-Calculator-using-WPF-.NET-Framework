@@ -21,8 +21,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Button x:Name="calculateButton" Content="Calculate" HorizontalAlignment="Left" Height="58" Margin="297,339,0,0" VerticalAlignment="Top" Width="143" Click="calculateButtonClicked" FontSize="23" FontFamily="Arial Black" Foreground="#FF1E609B" Background="#FFF6F5C5" Grid.Column="1" ClickMode="Press" Cursor="Hand"/>
-        <TextBlock x:Name="entryText" HorizontalAlignment="Left" Height="43" Margin="232,70,0,0" TextWrapping="Wrap" Text="Enter Two numbers" VerticalAlignment="Top" Width="280" Foreground="#FFEDE1E1" FontSize="25" TextAlignment="Center" Grid.Column="1"/>
-        <TextBox x:Name="firstNumberBox" HorizontalAlignment="Left" Height="51" Margin="42,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147" TextChanged="TextBox_TextChanged" FontSize="24" FontFamily="Arial Black" TextAlignment="Center" RenderTransformOrigin="0,0.5" Cursor="Pen" Grid.Column="1">
+        <TextBlock x:Name="entryText" HorizontalAlignment="Left" Height="43" Margin="232,70,0,0" TextWrapping="Wrap" Text="Enter Two Numbers" VerticalAlignment="Top" Width="280" Foreground="#FFEDE1E1" FontSize="25" TextAlignment="Center" Grid.Column="1"/>
+        <TextBox x:Name="firstNumberBox" HorizontalAlignment="Left" Height="51" Margin="42,151,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"  FontSize="24" FontFamily="Arial Black" TextAlignment="Center" RenderTransformOrigin="0,0.5" Cursor="Pen" Grid.Column="1">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -33,14 +33,14 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Label Content="First Number" HorizontalAlignment="Left" Margin="39,115,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FFF1F1F1" Grid.Column="1"/>
-        <TextBox x:Name="secondNumberBox" HorizontalAlignment="Left" Height="51" Margin="42,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147" TextChanged="TextBox_TextChanged" FontSize="24" FontFamily="Arial Black" TextAlignment="Center" Grid.Column="1" Cursor="Pen"/>
+        <TextBox x:Name="secondNumberBox" HorizontalAlignment="Left" Height="51" Margin="42,267,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="147"  FontSize="24" FontFamily="Arial Black" TextAlignment="Center" Grid.Column="1" Cursor="Pen"/>
         <Label Content="Second Number" HorizontalAlignment="Left" Margin="39,231,0,0" VerticalAlignment="Top" FontSize="18" Foreground="#FFF1F1F1" Grid.Column="1"/>
         <RadioButton x:Name="divideRadioButton" Content="Divide /" HorizontalAlignment="Left" Margin="314,262,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="15" Foreground="#FFF4EF2B" Checked="divideRadioButtonClicked" Grid.Column="1"/>
         <RadioButton x:Name="subtractRadioButton" Content="Subtract -" HorizontalAlignment="Left" Margin="314,217,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="15" Foreground="#FFF4EF2B" Checked="substractRadioButtonClicked" Grid.Column="1"/>
         <RadioButton x:Name="multiplyRadioButton" Content="Multiply *" HorizontalAlignment="Left" Margin="314,239,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="15" Foreground="#FFF4EF2B" Checked="multiplyRadioButtonClicked" Grid.Column="1"/>
         <RadioButton x:Name="addRadioButton" Content="ADD +" HorizontalAlignment="Left" Margin="314,196,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="15" Foreground="#FFF4EF2B" Checked="addRadioButtonClicked" Grid.Column="1"/>
         <TextBlock HorizontalAlignment="Left" Height="50" Margin="521,290,0,0" TextWrapping="Wrap" Text="Answer :" VerticalAlignment="Top" Width="124" FontSize="30" Foreground="White" Grid.Column="1"/>
-        <TextBlock x:Name="resultText" HorizontalAlignment="Left" Height="89" Margin="521,338,0,0" TextWrapping="Wrap" Text="----" VerticalAlignment="Top" Width="228" FontSize="23" Foreground="White" Grid.Column="1"/>
+        <TextBlock x:Name="resultText" HorizontalAlignment="Left" Height="89" Margin="521,338,0,0" TextWrapping="Wrap" Text="0000" VerticalAlignment="Top" Width="228" FontSize="23" Foreground="White" Grid.Column="1"/>
         <Button x:Name="clearButton" Content="C" HorizontalAlignment="Left" Height="56" Margin="81,339,0,0" VerticalAlignment="Top" Width="63" Click="clearButtonClicked" FontSize="23" FontFamily="Arial Black" Foreground="White" Background="#FFF30505" Grid.Column="1" ClickMode="Press" Cursor="Hand"/>
 
 
